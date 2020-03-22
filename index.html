@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title>qw
 </head>
 
 <body>
@@ -12,5 +12,24 @@
         提交111
     </div>
 </body>
+
+<script>
+    const p = (num) => {
+        return new Promise((resolve, reject) => {
+            if (num > 10) {
+                setTimeout(() => {
+                    console.log(resolve('成功'));
+
+                }, 1000)
+            } else {
+                console.log(reject('失败'));
+            }
+        })
+    }
+
+    p(11).then((val) => {
+        console.log(val);
+    })
+</script>
 
 </html>
